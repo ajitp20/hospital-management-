@@ -3,12 +3,14 @@ html {
   }
 
 header {
-    background-color: #FFF8DC;
+    /* background-color: #FFF8DC; */
+    backdrop-filter:blur(8px);
     padding: 10px;
     text-align:center;
     font-size: 40px;
     font-style: bold;
     font-display: white;
+    font-weight: 900;
 }
 
 nav {

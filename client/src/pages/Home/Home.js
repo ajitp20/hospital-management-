@@ -6,7 +6,7 @@ import styles from "./Home.module.css";
 export const Home = () => {
 	return (
 		<div className={styles.body}>
-			<header>Operation Scheduler</header>
+			<header>🏥 OPERATION SCHEDULER 🏥</header>
 			<nav>
 				<Link to="/find">
 					<button type="submit" className={styles.navBtn}>
