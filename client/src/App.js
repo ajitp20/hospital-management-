@@ -12,7 +12,7 @@ export const App = () => {
 	React.useEffect(() => {
 		console.log("componentDidMount success");
 		axios
-			.get("/api/data")
+			.get("/data")
 			.then((res) => {
 				console.log("data recieved: ", res.data);
 				setBestShows(res.data[0]);
