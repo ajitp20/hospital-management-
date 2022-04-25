@@ -7,17 +7,17 @@ import { Admin, Doctor, FindDoctor, Home, ScheduleOperation } from "./pages";
 import "./index.css";
 
 export const App = () => {
-	const [bestShows, setBestShows] = React.useState([]);
+	// const [bestShows, setBestShows] = React.useState([]);
 
 	React.useEffect(() => {
 		console.log("componentDidMount success");
-		axios
-			.get("/data")
-			.then((res) => {
-				console.log("data recieved: ", res.data);
-				setBestShows(res.data[0]);
-			})
-			.catch(alert);
+		// axios
+		// 	.get("/data")
+		// 	.then((res) => {
+		// 		console.log("data recieved: ", res.data);
+		// 		setBestShows(res.data[0]);
+		// 	})
+		// 	.catch(alert);
 	}, []);
 
 	return (

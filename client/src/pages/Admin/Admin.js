@@ -8,7 +8,7 @@ import styles from "./Admin.module.css";
 export const Admin = () => {
 	const [email, setEmail] = React.useState("");
 	const [password, setPassword] = React.useState("");
-	const [doctorData, setDoctorData] = React.useState();
+	// const [doctorData, setDoctorData] = React.useState();
 	const [patientData, setPatientData] = React.useState();
 	const [isAunthenticated, setIsAuthenticated] = React.useState(false);
 
@@ -41,8 +41,8 @@ export const Admin = () => {
 				const patientResponse = await axios.get("/schedule");
 				setPatientData(await patientResponse.data);
 
-				const doctorResponse = await axios.get("/doctors");
-				setDoctorData(await doctorResponse.data);
+				// const doctorResponse = await axios.get("/doctors");
+				// setDoctorData(await doctorResponse.data);
 			}
 		}
 		getData();
